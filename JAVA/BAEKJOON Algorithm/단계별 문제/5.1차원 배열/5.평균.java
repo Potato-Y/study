@@ -22,6 +22,6 @@ public class Main {
             allscore = allscore + (num[i] * 100 / max);
         }
 
-        System.out.println(allscore/full);
+        System.out.println(allscore / full);
     }
 }
