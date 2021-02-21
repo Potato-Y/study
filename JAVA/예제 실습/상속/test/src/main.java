@@ -1,18 +1,18 @@
 public class main {
     public static void main(String args[]) {
-        Point p=new Point();
-        p.set(1,2);
+        Point p = new Point();
+        p.set(1, 2);
         p.showPoint();
 
         System.out.println("---");
-        ColorPoint cp=new ColorPoint();
-        cp.set(3,4);
+        ColorPoint cp = new ColorPoint();
+        cp.set(3, 4);
         cp.setColor("red");
         cp.showColorPoint();
 
         System.out.println("---");
-        ColorPoint2 cp2=new ColorPoint2();
-        cp2.set(5,6);
+        ColorPoint2 cp2 = new ColorPoint2();
+        cp2.set(5, 6);
         cp2.setColor("Red");
         cp2.setBackgroundColor("Black");
         cp2.showAllColor();
@@ -45,16 +45,16 @@ class ColorPoint extends Point { // Point를 상속받은 ColorPoint 선언
     }
 }
 
-class ColorPoint2 extends ColorPoint{
+class ColorPoint2 extends ColorPoint {
     private String backgroundColor;
 
-    public void setBackgroundColor(String backgroundColor){
-        this.backgroundColor=backgroundColor;
-        System.out.print(backgroundColor+" ");
-        showColorPoint();
+    public void setBackgroundColor(String backgroundColor) {
+        this.backgroundColor = backgroundColor;
+
     }
 
-    public void showAllColor(){
-
+    public void showAllColor() {
+        System.out.print(backgroundColor + " ");
+        showColorPoint();
     }
 }
