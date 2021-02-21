@@ -50,7 +50,6 @@ class ColorPoint2 extends ColorPoint {
 
     public void setBackgroundColor(String backgroundColor) {
         this.backgroundColor = backgroundColor;
-
     }
 
     public void showAllColor() {
