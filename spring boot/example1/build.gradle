@@ -1,12 +1,12 @@
-buildscript{
-    ext{ //build.gradle에서 사용할 전역변수 선언
-        springBootVersion='2.1.7.RELEASE'
+buildscript {
+    ext { //build.gradle에서 사용할 전역변수 선언
+        springBootVersion = '2.1.7.RELEASE'
     }
-    repositories{
+    repositories {
         mavenCentral()
         jcenter()
     }
-    dependencies{
+    dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
@@ -30,5 +30,6 @@ dependencies { //프로젝트 개발에 필요한 의존성들을 선언하는 �
     compile 'com.h2database:h2' //인메모리 관계형 데이터베이스, 별도 설치x 프로젝트 의존성으로만 관리, 메모리에서만 실행되어 어플 재시작시 초기화됨. (이용해서 테스트로도 사용)
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.projectlombok:lombok'
+    compile 'org.springframework.boot:spring-boot-starter-mustache'
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
