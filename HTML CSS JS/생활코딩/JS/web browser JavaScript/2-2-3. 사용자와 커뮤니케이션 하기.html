@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="button" value="gogo" onclick="fun_confirm()">
+        <script>
+            function fun_confirm(){
+                var date=new Date();
+                if(prompt('올해는 몇 년도인가요? (4자리)')==date.getFullYear()){
+                    alert('맞았습니다!!');
+                }else{
+                    alert('틀렸습니다 ㅠㅠ');
+                }
+            }
+        </script>
+    </body>
+</html>

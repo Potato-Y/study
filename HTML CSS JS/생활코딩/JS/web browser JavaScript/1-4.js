@@ -1,6 +1,6 @@
-window.onload=function(){
-    var hg=document.getElementById('hg');
-    hg.addEventListener('click', function(){
-        alert('Hello GitHub');
-    })
-}
+window.onload = function () {
+    var hg = document.getElementById("hg");
+    hg.addEventListener("click", function () {
+        lert("Hello GitHub");
+    });
+};
