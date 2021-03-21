@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>console.log()</h1>
+        <p>개발자 도구를 이용하여 console를 확인하세요. (Chrome: F12)</p>
+        <p><input type="button" value="protocol" onclick="protocol()"></p>
+        <p><input type="button" value="host" onclick="host()"></p>
+        <p><input type="button" value="port" onclick="port()"></p>
+        <p><input type="button" value="pathname" onclick="pathname()"></p>
+        <p><input type="button" value="search" onclick="search()"></p>
+        <p><input type="button" value="hash" onclick="hash()"></p>
+
+        <script>
+            function protocol(){
+                console.log(location.protocol);
+            }
+
+            function host(){
+                console.log(location.host);
+            }
+
+            function port(){
+                console.log(location.port);
+            }
+
+            function pathname(){
+                console.log(location.pathname);
+            }
+
+            function search(){
+                console.log(location.search);
+            }
+
+            function hash(){
+                console.log(location.hash);
+            }
+        </script>
+    </body>
+</html>
