@@ -4,9 +4,9 @@
 
     </head>
     <body>
-        <input type="button" value="gogo" onclick="fun_confirm()">
+        <input type="button" value="년도 맞추기!" onclick="fun_prompt()">
         <script>
-            function fun_confirm(){
+            function fun_prompt(){
                 var date=new Date();
                 if(prompt('올해는 몇 년도인가요? (4자리)')==date.getFullYear()){
                     alert('맞았습니다!!');
