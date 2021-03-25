@@ -2,7 +2,7 @@
 <html>
     <head>
         <style>
-            li{
+            li {
                 padding: 10px;
                 list-style: none;
             }
@@ -11,24 +11,24 @@
     <body>
         <ul>
             <li>
-                새로운 창에 페이지 연결, 인자를 생략하면 이름이 붙지 않은 새 창이 열린다.<br>
-                <input type="button" value="window.open('.html')" onclick="window.open('https://github.com/potato-y');">
+                새로운 창에 페이지 연결, 인자를 생략하면 이름이 붙지 않은 새 창이 열린다.<br />
+                <input type="button" value="window.open('.html')" onclick="window.open('https://github.com/potato-y');" />
             </li>
             <li>
-                이 창에서 페이지 연결<br>
-                <input type="button" value="window.open('.html', '_self')" onclick="window.open('https://github.com/potato-y', '_self');">
+                이 창에서 페이지 연결<br />
+                <input type="button" value="window.open('.html', '_self')" onclick="window.open('https://github.com/potato-y', '_self');" />
             </li>
             <li>
-                _blank는 새 창을 의미한다.<br>
-                <input type="button" value="window.open('.html', '_blank')" onclick="window.open('https://github.com/potato-y', '_blank');">
+                _blank는 새 창을 의미한다.<br />
+                <input type="button" value="window.open('.html', '_blank')" onclick="window.open('https://github.com/potato-y', '_blank');" />
             </li>
             <li>
-                git이라는 이름의 새 창이 열린다. 또 누르면 해당 창에 페이지가 로드된다. <br>
-                <input type="button" value="window.open('.html', 'git')" onclick="window.open('https://github.com/potato-y', 'git');">
+                git이라는 이름의 새 창이 열린다. 또 누르면 해당 창에 페이지가 로드된다. <br />
+                <input type="button" value="window.open('.html', 'git')" onclick="window.open('https://github.com/potato-y', 'git');" />
             </li>
             <li>
-                세번째 인자는 창의 모양과 관련된 속성이 온다. 다만 최신 브라우저에서는 사용되지 않는 듯 하다. <br>
-                <input type="button" value="window.open('.html', '_blank')" onclick="window.open('https://github.com/potato-y', '_blank', 'width=200, height=200, resizable=no');">
+                세번째 인자는 창의 모양과 관련된 속성이 온다. 다만 최신 브라우저에서는 사용되지 않는 듯 하다. <br />
+                <input type="button" value="window.open('.html', '_blank', '크기 옵션')" onclick="window.open('https://github.com/potato-y', '_blank', 'width=200, height=200, resizable=no');" />
             </li>
         </ul>
     </body>
