@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -10,10 +10,10 @@ public class Main {
 
         double[] num = new double[full];
 
-
         for (int i = 0; i < full; i++) {
             num[i] = Integer.parseInt(sc.next());
-            if (max < num[i]) max = num[i];
+            if (max < num[i])
+                max = num[i];
         }
 
         double allscore = 0;

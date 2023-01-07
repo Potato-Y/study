@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -16,17 +16,16 @@ public class Main {
             calnum[i] = num[i] % 42;
         }
 
-        ArrayList<Integer> list=new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            for(int i1=0;i1<10;i1++){
-                if(!list.contains(calnum[i]))
-                if (calnum[i] == calnum[i1]) {
-                    list.add(calnum[i]);
-                    break;
-                }
+            for (int i1 = 0; i1 < 10; i1++) {
+                if (!list.contains(calnum[i]))
+                    if (calnum[i] == calnum[i1]) {
+                        list.add(calnum[i]);
+                        break;
+                    }
             }
         }
-
 
         System.out.println(list.size());
     }

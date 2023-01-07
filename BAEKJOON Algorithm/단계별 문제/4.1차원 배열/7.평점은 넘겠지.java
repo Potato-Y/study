@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -21,9 +21,10 @@ public class Main {
             averageScore /= maxpe;
             int count = 0;
             for (int n = 0; n < maxpe; n++) {
-                if (tempScore[n] > averageScore) count++;
+                if (tempScore[n] > averageScore)
+                    count++;
             }
-            ratio[i] =  ((double)count / (double)maxpe)*100;
+            ratio[i] = ((double) count / (double) maxpe) * 100;
         }
 
         DecimalFormat format = new DecimalFormat();
