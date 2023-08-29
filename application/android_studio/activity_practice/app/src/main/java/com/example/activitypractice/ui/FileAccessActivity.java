@@ -64,12 +64,12 @@ public class FileAccessActivity extends AppCompatActivity {
             // 파일 출력 스트림을 닫는다.
             fileOutputStream.close();
 
-            Toast.makeText(getApplicationContext(), R.string.success_save, Toast.LENGTH_SHORT);
+            Toast.makeText(getApplicationContext(), R.string.success_save, Toast.LENGTH_SHORT).show();
         } catch (FileNotFoundException e) {
-            Toast.makeText(getApplicationContext(), R.string.load_file_error, Toast.LENGTH_SHORT);
+            Toast.makeText(getApplicationContext(), R.string.load_file_error, Toast.LENGTH_SHORT).show();
             Log.w(LOG_TAG, "FAIL: save file\n" + e.getMessage());
         } catch (IOException e) {
-            Toast.makeText(getApplicationContext(), R.string.load_file_error, Toast.LENGTH_SHORT);
+            Toast.makeText(getApplicationContext(), R.string.load_file_error, Toast.LENGTH_SHORT).show();
             Log.w(LOG_TAG, "FAIL: save file\n" + e.getMessage());
         }
     }
@@ -99,12 +99,13 @@ public class FileAccessActivity extends AppCompatActivity {
     public void loadContent() {
         try {
             editTextContent.setText(loadFormInnerStorage(FILE_NAME));
+        } catch (FileNotFoundException e) {
+            // 첫 로드로 인지하고 넘어간다.
         } catch (IOException e) {
-            Toast.makeText(getApplicationContext(), "파일을 불러오는 중 오류가 발생했습니다.", Toast.LENGTH_SHORT);
-            Log.w(LOG_TAG, "FAIL: load file\n" + e.getMessage());
+            Toast.makeText(getApplicationContext(), "파일을 불러오는 중 오류가 발생했습니다.", Toast.LENGTH_SHORT).show();
+            Log.w(LOG_TAG, "FAIL: load file\n" + e.toString());
         }
     }
-
 
     /**
      * 파일에서 데이터를 불러온다.
