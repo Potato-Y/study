@@ -33,5 +33,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/file_access" />
+
+        <Button
+            android:id="@+id/buttonDateAndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date_and_time" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

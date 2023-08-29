@@ -2,6 +2,9 @@
     <string name="app_name">activity practice</string>
     <string name="file_access">File Access</string>
     <string name="loaded_content">loaded content</string>
+    <string name="date_and_time">Date &amp; Time</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
     <string name="save">Save</string>
 
     <!--  message  -->
