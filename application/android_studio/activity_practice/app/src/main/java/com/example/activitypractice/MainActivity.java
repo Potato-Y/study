@@ -9,11 +9,11 @@ import android.widget.Button;
 
 import com.example.activitypractice.ui.DateAndTimeActivity;
 import com.example.activitypractice.ui.FileAccessActivity;
+import com.example.activitypractice.ui.MenusAndDialogsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonFileAccess;
-    Button buttonDateAndTime;
+    Button buttonFileAccess, buttonDateAndTime, buttonMenusAndDialogs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonFileAccess = findViewById(R.id.buttonFileAccess); // file access 페이지를 여는 버튼 연결
         buttonDateAndTime = findViewById(R.id.buttonDateAndTime); // date & time 페이지를 여는 버튼 연결
+        buttonMenusAndDialogs = findViewById(R.id.buttonMenusAndDialogs); // Menu & Dialog 페이지를 여는 버튼 연결
 
         buttonFileAccess.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), DateAndTimeActivity.class);
+                startActivity(intent);
+            }
+        });
+        buttonMenusAndDialogs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MenusAndDialogsActivity.class);
                 startActivity(intent);
             }
         });

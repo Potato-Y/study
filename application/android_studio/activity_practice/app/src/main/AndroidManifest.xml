@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ActivityPractice"
         tools:targetApi="31">
         <activity
+            android:name=".ui.dialog.CustomDialogExActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MenusAndDialogsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.DateAndTimeActivity"
             android:exported="false" />
         <activity

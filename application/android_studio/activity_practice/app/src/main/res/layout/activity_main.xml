@@ -39,5 +39,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/date_and_time" />
+
+        <Button
+            android:id="@+id/buttonMenusAndDialogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menus_and_dialogs" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
