@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">activity practice</string>
+    <string name="file_access">File Access</string>
+    <string name="loaded_content">loaded content</string>
+    <string name="save">Save</string>
+
+    <!--  message  -->
+    <string name="success_save">Save was successful.</string>
+    <string name="load_file_error">An error occurred while loading the file.</string>
 </resources>
