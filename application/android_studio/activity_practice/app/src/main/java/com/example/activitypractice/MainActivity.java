@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import com.example.activitypractice.ui.DateAndTimeActivity;
 import com.example.activitypractice.ui.FileAccessActivity;
 import com.example.activitypractice.ui.MenusAndDialogsActivity;
+import com.example.activitypractice.ui.chapter10.InteractiveIntentActivity;
 import com.example.activitypractice.ui.chapter6.AutoCompleteActivity;
 import com.example.activitypractice.ui.chapter6.BarExActivity;
 import com.example.activitypractice.ui.chapter6.ViewContainerActivity;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         setButtonOnclickListener(buttonViewFlipper, ViewFlipperActivity.class);
 
         setButtonOnclickListener((Button) findViewById(R.id.buttonDrawEx), DrawExActivity.class);
+        setButtonOnclickListener((Button) findViewById(R.id.buttonInteractive), InteractiveIntentActivity.class);
     }
 
     private void setButtonOnclickListener(Button button, Class<?> clazz) {

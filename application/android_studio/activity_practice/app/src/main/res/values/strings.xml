@@ -18,6 +18,7 @@
     <string name="view_container">View Container</string>
     <string name="view_flipper">View Flipper</string>
     <string name="draw_ex">Draw Ex</string>
+    <string name="interactive_activity">Interactive Activity</string>
 
     <string name="custom_dialog">Custom dialog</string>
 
