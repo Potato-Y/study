@@ -14,6 +14,8 @@ import com.example.activitypractice.ui.MenusAndDialogsActivity;
 import com.example.activitypractice.ui.chapter6.AutoCompleteActivity;
 import com.example.activitypractice.ui.chapter6.BarExActivity;
 import com.example.activitypractice.ui.chapter6.ViewContainerActivity;
+import com.example.activitypractice.ui.chapter6.ViewFlipperActivity;
+import com.example.activitypractice.ui.chapter9.DrawExActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
         final Button buttonViewContainer = findViewById(R.id.buttonViewContainer);
         setButtonOnclickListener(buttonViewContainer, ViewContainerActivity.class);
+
+        final Button buttonViewFlipper = findViewById(R.id.buttonViewFlipper);
+        setButtonOnclickListener(buttonViewFlipper, ViewFlipperActivity.class);
     }
 
     private void setButtonOnclickListener(Button button, Class<?> clazz) {

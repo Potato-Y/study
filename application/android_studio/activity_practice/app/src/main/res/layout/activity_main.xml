@@ -65,5 +65,11 @@
             android:layout_height="wrap_content"
             android:text="@string/view_container" />
 
+        <Button
+            android:id="@+id/buttonViewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_flipper" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
