@@ -6,14 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.example.activitypractice.ui.DateAndTimeActivity;
 import com.example.activitypractice.ui.FileAccessActivity;
 import com.example.activitypractice.ui.MenusAndDialogsActivity;
+import com.example.activitypractice.ui.chapter6.AutoCompleteActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonFileAccess, buttonDateAndTime, buttonMenusAndDialogs;
+    Button buttonFileAccess, buttonDateAndTime, buttonMenusAndDialogs, buttonAutoComplete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         buttonFileAccess = findViewById(R.id.buttonFileAccess); // file access 페이지를 여는 버튼 연결
         buttonDateAndTime = findViewById(R.id.buttonDateAndTime); // date & time 페이지를 여는 버튼 연결
         buttonMenusAndDialogs = findViewById(R.id.buttonMenusAndDialogs); // Menu & Dialog 페이지를 여는 버튼 연결
+        buttonAutoComplete = findViewById(R.id.buttonAutoComplete); // 이하 생략
+
+        buttonAutoComplete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setGoToPage(AutoCompleteActivity.class);
+            }
+        });
 
         buttonFileAccess.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,5 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void setGoToPage(Class<?> clazz) {
+        Intent intent = new Intent(getApplicationContext(), clazz);
+        startActivity(intent);
     }
 }

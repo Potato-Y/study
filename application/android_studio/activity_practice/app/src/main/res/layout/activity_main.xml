@@ -19,6 +19,7 @@
         app:title="@string/app_name" />
 
     <LinearLayout
+        android:id="@+id/linearLayoutMain"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
@@ -45,5 +46,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/menus_and_dialogs" />
+
+        <Button
+            android:id="@+id/buttonAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_complete" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
