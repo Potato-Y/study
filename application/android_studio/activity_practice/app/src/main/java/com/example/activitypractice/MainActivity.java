@@ -15,17 +15,15 @@ import com.example.activitypractice.ui.chapter6.AutoCompleteActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonFileAccess, buttonDateAndTime, buttonMenusAndDialogs, buttonAutoComplete;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonFileAccess = findViewById(R.id.buttonFileAccess); // file access 페이지를 여는 버튼 연결
-        buttonDateAndTime = findViewById(R.id.buttonDateAndTime); // date & time 페이지를 여는 버튼 연결
-        buttonMenusAndDialogs = findViewById(R.id.buttonMenusAndDialogs); // Menu & Dialog 페이지를 여는 버튼 연결
-        buttonAutoComplete = findViewById(R.id.buttonAutoComplete); // 이하 생략
+        final Button buttonFileAccess = findViewById(R.id.buttonFileAccess); // file access 페이지를 여는 버튼 연결
+        final Button buttonDateAndTime = findViewById(R.id.buttonDateAndTime); // date & time 페이지를 여는 버튼 연결
+        final Button buttonMenusAndDialogs = findViewById(R.id.buttonMenusAndDialogs); // Menu & Dialog 페이지를 여는 버튼 연결
+        final Button buttonAutoComplete = findViewById(R.id.buttonAutoComplete); // 이하 생략
 
         buttonAutoComplete.setOnClickListener(new View.OnClickListener() {
             @Override
