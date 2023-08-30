@@ -59,5 +59,11 @@
             android:layout_height="wrap_content"
             android:text="@string/bar_ex" />
 
+        <Button
+            android:id="@+id/buttonViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_container" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,7 @@ import com.example.activitypractice.ui.FileAccessActivity;
 import com.example.activitypractice.ui.MenusAndDialogsActivity;
 import com.example.activitypractice.ui.chapter6.AutoCompleteActivity;
 import com.example.activitypractice.ui.chapter6.BarExActivity;
+import com.example.activitypractice.ui.chapter6.ViewContainerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         final Button buttonMenusAndDialogs = findViewById(R.id.buttonMenusAndDialogs); // Menu & Dialog 페이지를 여는 버튼 연결
         final Button buttonAutoComplete = findViewById(R.id.buttonAutoComplete); // 이하 생략
         final Button buttonBarEx = findViewById(R.id.buttonBarEx);
+        final Button buttonViewContainer = findViewById(R.id.buttonViewContainer);
+
+        setButtonOnclickListener(buttonViewContainer, ViewContainerActivity.class);
 
         buttonBarEx.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MenusAndDialogsActivity.class);
                 startActivity(intent);
+            }
+        });
+    }
+
+    private void setButtonOnclickListener(Button button, Class<?> clazz) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setGoToPage(clazz);
             }
         });
     }

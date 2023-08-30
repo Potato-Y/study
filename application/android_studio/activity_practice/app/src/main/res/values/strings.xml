@@ -7,10 +7,13 @@
     <string name="time">Time</string>
     <string name="save">Save</string>
     <string name="open">Open</string>
+    <string name="scroll_view">Scroll view</string>
+    <string name="sliding_drawer">Sliding drawer</string>
 
     <string name="menus_and_dialogs">Menu &amp; Dialog</string>
     <string name="auto_complete">Auto complete</string>
     <string name="bar_ex">Bar Ex</string>
+    <string name="view_container">View Container</string>
 
     <string name="custom_dialog">Custom dialog</string>
 
