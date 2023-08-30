@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         final Button buttonViewFlipper = findViewById(R.id.buttonViewFlipper);
         setButtonOnclickListener(buttonViewFlipper, ViewFlipperActivity.class);
+
+        setButtonOnclickListener((Button) findViewById(R.id.buttonDrawEx), DrawExActivity.class);
     }
 
     private void setButtonOnclickListener(Button button, Class<?> clazz) {

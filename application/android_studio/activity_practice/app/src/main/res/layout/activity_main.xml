@@ -71,5 +71,11 @@
             android:layout_height="wrap_content"
             android:text="@string/view_flipper" />
 
+        <Button
+            android:id="@+id/buttonDrawEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/draw_ex" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
