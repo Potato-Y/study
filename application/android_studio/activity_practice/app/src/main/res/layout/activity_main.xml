@@ -53,5 +53,11 @@
             android:layout_height="wrap_content"
             android:text="@string/auto_complete" />
 
+        <Button
+            android:id="@+id/buttonBarEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bar_ex" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
