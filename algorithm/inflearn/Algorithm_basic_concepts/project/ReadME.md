@@ -1,0 +1,1 @@
+본 프로젝트는 인프런 [알고리즘 기본 개념](https://www.inflearn.com/course/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90) 강의를 통해 학습한 내용입니다.
