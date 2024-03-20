@@ -21,9 +21,11 @@ public class Main {
     int cnt = 0;
     HashSet<Integer> hashSet = new HashSet<>();
     for (int i = 0; i < n - 2; i++) {
-      for (int j = 0; j < n - 1; j++) {
-        for (int l = 0; l < n; l++) {
+      for (int j = i + 1; j < n - 1; j++) {
+        for (int l = j + 1; l < n; l++) {
           int num = arr[i] + arr[j] + arr[l];
+          // 3중 for문에서 바로 답을 구하려고 하면 모든 경우의 수를 확인하지 않아 보장되지 않는다.
+          // 때문에 통과할 수 없다.
           if (!hashSet.contains(num)) {
             cnt++;
             hashSet.add(num);
